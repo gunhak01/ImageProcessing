@@ -38,9 +38,11 @@ END_MESSAGE_MAP()
 BOOL ImageProcessingEditDlg::OnInitDialog()
 {
 	//dialog에 view 올리기
-	m_pEditView = new ImageProcessingEditView;
-	m_pEditView->Create(NULL, L"", WS_CHILD | WS_VISIBLE, CRect(0, 0, 1000, 2000), this, 50001);
-	m_pEditView->OnInitialUpdate();
+	//m_pEditView = new ImageProcessingEditView;
+	//m_pEditView->Create(NULL, L"", WS_CHILD | WS_VISIBLE, CRect(0, 0, 1000, 2000), this, 50001);
+	//m_pEditView->OnInitialUpdate();
+
+	m_imgWnd.Create(10, 10, this);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 예외: OCX 속성 페이지는 FALSE를 반환해야 합니다.

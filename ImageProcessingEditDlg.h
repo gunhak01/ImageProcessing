@@ -1,6 +1,7 @@
 ﻿#pragma once
-#include "ImageProcessingEditView.h"
+//#include "ImageProcessingEditView.h"
 
+#include "CImgWnd.h"
 // ImageProcessingEditDlg 대화 상자
 
 class ImageProcessingEditDlg : public CDialogEx
@@ -10,7 +11,7 @@ class ImageProcessingEditDlg : public CDialogEx
 public:
 	ImageProcessingEditDlg(CWnd* pParent = nullptr);   // 표준 생성자입니다.
 	virtual ~ImageProcessingEditDlg();
-	ImageProcessingEditView* m_pEditView;
+	//ImageProcessingEditView* m_pEditView;
 
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
@@ -22,6 +23,7 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
+	CImgWnd m_imgWnd;
 	virtual BOOL OnInitDialog();
 	afx_msg void OnDestroy();
 };
