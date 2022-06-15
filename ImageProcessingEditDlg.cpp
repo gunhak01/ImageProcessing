@@ -6,7 +6,12 @@
 #include "ImageProcessingEditDlg.h"
 #include "afxdialogex.h"
 
-
+#include <memory>
+#include <gdiplus.h>
+#include <atlImage.h>
+#include <wingdi.h>
+using namespace Gdiplus;
+using namespace std;
 // ImageProcessingEditDlg 대화 상자
 
 IMPLEMENT_DYNAMIC(ImageProcessingEditDlg, CDialogEx)
@@ -54,5 +59,5 @@ void ImageProcessingEditDlg::OnDestroy()
 	CDialogEx::OnDestroy();
 
 	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
-	delete m_pEditView;
+	//delete m_pEditView;
 }
