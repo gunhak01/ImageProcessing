@@ -86,8 +86,10 @@ void CImageProcessingView::OnInitialUpdate()
 	m_listView.SetExtendedStyle(dwExStyle | LVS_EX_CHECKBOXES | LVS_EX_BORDERSELECT | LVS_EX_GRIDLINES | LVS_EX_FULLROWSELECT);
 
 	////폴더 내 파일목록 조회
-	////string path = "C:\\Users\\r2com\\source\\repos\\masungil-GdiplusImage\\GdiplusImage\\*.png";
+	//string path = "C:\\Users\\r2com\\source\\repos\\masungil-GdiplusImage\\GdiplusImage\\*.png";
 	//string path = "C:\\Users\\gunha\\source\\repos\\ImageProcessing\\*.*";
+	//string path = "\\*.*";
+	// 
 	//struct _finddata_t fd;	intptr_t handle;
 	//if ((handle = _findfirst(path.c_str(), &fd)) == -1L)
 	//	cout << "No file in directory!" << endl;
@@ -95,8 +97,8 @@ void CImageProcessingView::OnInitialUpdate()
 	//int nRow = 0;
 	//do
 	//{
-	//	//m_listView.InsertItem(nRow, _T(fd.name), 0);
-	//	cout << fd.name << endl;
+	//	m_listView.InsertItem(nRow, _T("fd.name"), 0);
+	//	//cout << fd.name << endl;
 	//	nRow++;
 	//} while (_findnext(handle, &fd) == 0);
 	//_findclose(handle);
